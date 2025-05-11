@@ -18,8 +18,7 @@ updates:
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "daily"
     commit-message:
       prefix: ":seedling:"
     labels:
@@ -34,8 +33,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "daily"
     commit-message:
       prefix: ":seedling:"
     labels:
