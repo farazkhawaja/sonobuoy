@@ -1,9 +1,10 @@
 module github.com/vmware-tanzu/sonobuoy
 
 go 1.23
-// test2 commit 
+
+// test2 commit
 require (
-	github.com/briandowns/spinner v1.19.0
+	github.com/briandowns/spinner v1.23.2
 	github.com/gorilla/mux v1.8.0
 	github.com/hashicorp/go-version v1.6.0
 	github.com/kylelemons/godebug v1.1.0
@@ -83,4 +84,5 @@ require (
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 )
+
 // test
