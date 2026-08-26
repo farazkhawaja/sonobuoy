@@ -4,7 +4,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: golangci-lint run
         uses: golangci/golangci-lint-action@82606bf257cbaff209d206a39f5134f0cfbfd2ee # v9.2.1
         with:
@@ -13,7 +13,7 @@ jobs:
   bash-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: Run Shellcheck
         uses: azohra/shell-linter@v0.6.0
         with:
@@ -21,7 +21,7 @@ jobs:
   go-mod-tidy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - uses: actions/setup-go@v3
         with:
           go-version: 1.23
@@ -31,7 +31,7 @@ jobs:
   sync-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
       - name: sync readme
         run: |
           ./scripts/ci/check_readme_in_sync.sh
